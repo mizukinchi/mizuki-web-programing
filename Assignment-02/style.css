@@ -1,0 +1,19 @@
+/* @font-face {
+    font-family: 'futura';
+    src: url('assets/futura.otf');
+} */
+
+body {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+
+}
+
+h1 {
+    color: blue
+/* }
+
+h2 {
+    font-weight: 700;
+} */
+
+
