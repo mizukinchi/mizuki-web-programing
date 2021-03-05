@@ -4,16 +4,76 @@
 } */
 
 body {
-    font-family:Georgia, 'Times New Roman', Times, serif;
-
+    font-family: Helvetica, sans-serif, 'Times New Roman', Times, serif;
 }
 
+p {
+    color:black;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 h1 {
-    color: blue
-/* }
+    color: black;
+}
 
+.content {
+    border: 3px solid black;
+  position: relative;
+  top: 50px;
+  width: 400px;
+  margin: 0 auto;
+  text-align: center;
+}
 h2 {
+    color:darkolivegreen;
     font-weight: 700;
-} */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom:90px;
+    max-width: 80%;
+} 
 
+h3{
+    margin-left: 10%;
+    margin-bottom: 20px;
+    
+}
 
+h4 {
+    margin-left: 10%;
+    color:darkolivegreen;
+    margin-top: 50px;
+}
+
+h5 {
+    margin-left: 10%;
+    color:darkolivegreen;
+    margin-top: 50px;
+}
+
+.scoot {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.shout {
+    color:steelblue;
+    border: 3px solid darkred;
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-top: 8px;
+    margin-bottom: 150px;
+  position: relative;
+  top: 50px;
+  width: 400px;
+    
+}
+
+.choco {
+    margin-bottom: 300px;
+}
