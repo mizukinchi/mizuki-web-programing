@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+section {
+    width: 100vw;
+}
+
+.hero {
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hero-text-container, .hero-image-container {
+    width: 50%;
+}
+
+.hero-image-container {
+    background: url(img/cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-text-container {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-text {
+    /* added a max width to the hero text so that the long line doesn't stretch across the entire width of .hero-text-container */
+    max-width: 50%;
+}
+
+/* selecting for everything (*) that's a direct child of the .hero-text div. "Direct Child" means only 1 level down in the DOM, and you can specify that with a ">" */
+.hero-text > * {
+    /* spacing out the hero text */
+    margin-bottom: 5%;
+}
+
+h2 {
+    /* capslock the text */
+    text-transform: uppercase;
+}
+
+.articles {
+    width: 80%;
+    display: flex;
+    margin: auto;
+
+    /* setting yourself up for media query */
+    flex-wrap: wrap;
+}
+
+article {
+    flex: 1;
+
+    /* this is the one line that changes in the media query! */
+    flex-basis: 50%;
+
+    /* in box-sizing: border-box, padding is counted as part of the width, but margin is not. That's why I'm using padding instead of margins to space the articles apart out. If I used margin instead, the margins will make the area each article takes up 56% (50% + 3% margin on either side) instead. And because our sections are 100vw wide, 56% + 56% will make the row of articles 112% total, so the flex-wrap would kick the right side article to the next line since it won't fit.  */
+    padding: 3%;
+}
+
+article * {
+    margin-bottom: 15px;
+}
+
+img {
+    width: 100%;
+}
+
+.article-text h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+
+.summary {
+    font-size: 21px;
+    line-height: 1.3;
+}
+
+.dept, .author, .date {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+.author, .date {
+    display: inline-block;
+}
+
+.dept {
+    color: red;
+    text-transform: uppercase;
+}
+
+.author {
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .hero-text-container, .hero-image-container {
+        width: 100%;
+    }
+
+    article {
+        flex-basis: 100%;
+    }
+
+    .article-text h1 {
+        font-size: 24px;
+    }
+
+    .summary {
+        font-size: 18px;
+    }
+
+}
