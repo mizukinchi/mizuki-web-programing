@@ -1,0 +1,72 @@
+body {
+    background-color:darkolivegreen;
+    font-family: museo, serif;
+    font-weight: 700;
+    font-style: normal;
+    }
+
+h1{
+    color: black;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    vertical-align: bottom;
+    border: 3px solid black; 
+    margin: 0 auto;
+    border-radius: 20px;
+    background-color: rgb(253, 242, 221);
+    
+}
+
+.topmargin{
+    visibility: hidden;
+}
+
+.biggest{
+    margin: 0 auto;
+    width: 68%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    border-radius: 30px;
+}
+
+.midsize{
+    margin: 0 auto;
+    width: 80%;
+    border-radius: 0px;
+}
+.chubby{
+    margin: 0 auto;
+    width: 58%;
+    padding-top: 7%;
+    padding-bottom: 7%;
+    border-radius: 10px;
+}
+
+.container{
+    align-items: center;
+    display: flex;
+}
+
+.box {
+    width: 48%;
+  }
+
+#center {
+    justify-content: space-between
+  }
+
+div {
+    color: black;
+}
+
+h1:hover {
+    color: red
+}
+
+.button:hover {
+    color: red;
+}
+
+
+  

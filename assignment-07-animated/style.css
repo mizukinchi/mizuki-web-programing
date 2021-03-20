@@ -1,0 +1,133 @@
+body {
+    width: 100vw;
+    background-color:rgb(0, 0, 0);
+    font-family: bc-mikser, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+h2 {
+    color: white;
+    cursor:pointer;
+}
+
+p {
+    color:rgba(0, 0, 0, 0);
+    line-height: 10px;
+    cursor:pointer;
+}
+.container {
+    position: absolute;
+    top: 0;
+    width: 90%;
+    left: 10%;
+}
+
+.title {
+    color: rgba(0, 0, 0, 0);
+}
+
+.book {
+    color: rgba(0, 0, 0, 0);
+    height: 100px;
+    top: -500px;
+    position: absolute;
+    border: 3px solid rgb(255, 255, 255); 
+    background-color: rgb(0, 0, 0);
+    font-size: 70px;
+    text-align: center;
+    overflow: hidden;
+    cursor:pointer;
+}
+
+.book1 {
+    width: 50%;
+    left: 20%;
+    height: 200px;
+    
+    
+    border-radius: 10px;
+    animation: bookfall1 1s ease-in 3s 1 forwards;
+}
+
+.book2 {
+    width: 70%;
+    left: -5%;
+    border-radius: 10px;
+    animation: bookfall2 1s ease-in 2s 1 forwards;
+}
+
+.book3 {
+    width: 60%;
+    left: 0;
+    border-radius: 10px;
+    animation: bookfall3 1s ease-in 1s 1 forwards;
+}
+
+.book4 {
+    width: 60%;
+    right: 20%;
+    border-radius: 10px;
+    animation: bookfall4 1s ease-in 1 forwards;
+}
+
+.book5 {
+    width: 60%;
+    right: 10%;
+    border-radius: 10px;
+    animation: bookfall5 1s ease-in 4s 1 forwards;
+}
+
+
+@keyframes bookfall5 {
+    0% {
+        top: calc(0vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 612px);
+    }
+}
+
+@keyframes bookfall4 {
+    0% {
+        top: calc(0vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 100px);
+    }
+}
+
+@keyframes bookfall3 {
+    0% {
+        top: calc(0vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 203px)
+    }
+}
+
+@keyframes bookfall2 {
+    0% {
+        top: calc(0vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 306px)
+    }
+}
+
+@keyframes bookfall1 {
+    0% {
+        top: calc(0vh - 100px);
+    }
+
+    100% {
+        top: calc(100vh - 509px)
+    }
+}
+
+.button:hover {
+    color: red;
+}
